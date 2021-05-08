@@ -1,0 +1,6 @@
+{// solución para que os importe los componentes
+    "compilerOptions": {
+        "target": "es6",
+        "allowSyntheticDefaultImports": true
+    }
+}

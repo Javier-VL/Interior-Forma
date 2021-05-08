@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
+
+import "bootstrap/dist/css/bootstrap.min.css";
+
+//Componentes
+import NavbarBS from './components/NavbarBS'
+import CarouselBS from './components/CarrouselBS'
+import JumbotronBS from './components/JumbotronBS'
+import NavsBS from './components/NavsBS'
+import FooterBS from './components/FooterBS'
+import AppRouter from './routers/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <NavbarBS className ="container-sm"/>
+      <CarouselBS/>
+      <JumbotronBS/>
+
+      <AppRouter/>
+
+      <FooterBS/>
+
     </div>
   );
 }
