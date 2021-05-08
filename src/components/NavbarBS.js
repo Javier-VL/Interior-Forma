@@ -10,16 +10,16 @@ export default function NavbarBS() {
                 
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <NavDropdown title="Sofas" id="collasible-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Esquineros</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Love Seat</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Ocasionales</NavDropdown.Item>
+                        <NavDropdown title="Productos" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="#action/3.1">Sofas</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Sillones</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2">Sillas</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.3">Guardado</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.4">Mesas</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#pricing">Sillas</Nav.Link>
-                        <Nav.Link href="#pricing">Guardado</Nav.Link>
-                        <Nav.Link href="#pricing">Mesas</Nav.Link>
+                        <Nav.Link href="#pricing">Contacto</Nav.Link>
                         
 
                     </Nav>
