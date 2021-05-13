@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import NavsBS from '../components/NavsBS'
 import All_Screen from '../components/content/All_Screen'
 import Sofas_Screen from '../components/content/Sofas_Screen'
-import NavsBS2 from '../components/NavsBS2'
+//import NavsBS2 from '../components/NavsBS2'
 import Guardado_Screen from '../components/content/Guardado_Screen';
 import Mesas_Screen from '../components/content/Mesas_Screen';
 import Sillas_Screen from '../components/content/Sillas_Screen';
@@ -15,7 +15,7 @@ import Sillas_Screen from '../components/content/Sillas_Screen';
 export default function AppRouter() {
     return (
        <Router>
-           <div>
+           <div className="container">
                <NavsBS/>
                
                 <Switch>

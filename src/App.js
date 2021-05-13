@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarBS from './components/NavbarBS'
 import CarouselBS from './components/CarrouselBS'
 import JumbotronBS from './components/JumbotronBS'
-import NavsBS from './components/NavsBS'
 import FooterBS from './components/FooterBS'
 import AppRouter from './routers/AppRouter';
 
