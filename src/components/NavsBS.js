@@ -3,10 +3,10 @@ import { Link} from 'react-router-dom'
 
 
 //Hola a todos
-export default function NavsBS() {
+export default function NavsBS({guardarCategoria}) {
 
-    const handleAdd = (e) => {
-        return ()=> console.log("hola")
+    const handleAdd = (nombre) => {
+        return ()=> guardarCategoria(nombre)
     }
 
     return (
@@ -14,19 +14,19 @@ export default function NavsBS() {
          
             <ul className="nav nav-pills " id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
-                    <Link onClick={handleAdd()} className="nav-link active"  id="home-tab" data-toggle="tab" to="/" role="tab" aria-controls="home" aria-selected="true">Todo</Link>
+                    <Link onClick={handleAdd("Todo")} className="nav-link active"  id="home-tab" data-toggle="tab" to="/" role="tab" aria-controls="home" aria-selected="true">Todo</Link>
                 </li>
                 <li className="nav-item" role="presentation">
-                    <Link className="nav-link "  id="all-tab" data-toggle="tab" to="/sofas" role="tab" aria-controls="profile" aria-selected="false">Sofas</Link>
+                    <Link onClick={handleAdd("Sofas")}className="nav-link "  id="all-tab" data-toggle="tab" to="/sofas" role="tab" aria-controls="profile" aria-selected="false">Sofas</Link>
                 </li>
                 <li className="nav-item" role="presentation">
-                    <Link className="nav-link" id="sillas-tab" data-toggle="tab" to="/sillas" role="tab" aria-controls="contact" aria-selected="false">Sillas</Link>
+                    <Link onClick={handleAdd("Sillas")} className="nav-link" id="sillas-tab" data-toggle="tab" to="/sillas" role="tab" aria-controls="contact" aria-selected="false">Sillas</Link>
                 </li>
                 <li className="nav-item" role="presentation">
-                    <Link className="nav-link" id="guardado-tab" data-toggle="tab" to="/guardado" role="tab" aria-controls="contact" aria-selected="false">Guardado</Link>
+                    <Link onClick={handleAdd("Guardado")} className="nav-link" id="guardado-tab" data-toggle="tab" to="/guardado" role="tab" aria-controls="contact" aria-selected="false">Guardado</Link>
                 </li>
                 <li className="nav-item" role="presentation">
-                    <Link className="nav-link" id="mesas-tab" data-toggle="tab" to="/mesas" role="tab" aria-controls="contact" aria-selected="false">Mesas</Link>
+                    <Link onClick={handleAdd("Mesas")} className="nav-link" id="mesas-tab" data-toggle="tab" to="/mesas" role="tab" aria-controls="contact" aria-selected="false">Mesas</Link>
                 </li>
             </ul>
             {/*
