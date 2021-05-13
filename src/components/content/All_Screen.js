@@ -8,6 +8,10 @@ export default function All_Screen() {
         <div>
             <h1>TODOS LOS ARTICULOS</h1>
             <hr></hr>
+            <ProductoList tipo="sofa"/>
+            <ProductoList tipo="silla"/>
+            <ProductoList tipo="guardado"/>
+            <ProductoList tipo="mesa"/>
             
          
             

@@ -9,15 +9,19 @@ export default function NavsBS({guardarCategoria}) {
         return ()=> guardarCategoria(nombre)
     }
 
+
+
     return (
         <>
          
             <ul className="nav nav-pills " id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
+
                     <Link onClick={handleAdd("Todo")} className="nav-link active"  id="home-tab" data-toggle="tab" to="/" role="tab" aria-controls="home" aria-selected="true">Todo</Link>
                 </li>
                 <li className="nav-item" role="presentation">
                     <Link onClick={handleAdd("Sofas")}className="nav-link "  id="all-tab" data-toggle="tab" to="/sofas" role="tab" aria-controls="profile" aria-selected="false">Sofas</Link>
+
                 </li>
                 <li className="nav-item" role="presentation">
                     <Link onClick={handleAdd("Sillas")} className="nav-link" id="sillas-tab" data-toggle="tab" to="/sillas" role="tab" aria-controls="contact" aria-selected="false">Sillas</Link>

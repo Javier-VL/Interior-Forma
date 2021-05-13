@@ -9,7 +9,9 @@ import Sofas_Screen from '../components/content/Sofas_Screen'
 import Guardado_Screen from '../components/content/Guardado_Screen';
 import Mesas_Screen from '../components/content/Mesas_Screen';
 import Sillas_Screen from '../components/content/Sillas_Screen';
+
 import JumbotronBS from '../components/JumbotronBS';
+
 
 
 
@@ -22,6 +24,7 @@ export default function AppRouter() {
        <Router>
            <div className="container">
 
+
                 <JumbotronBS
                     categoria = {categoria}
                 />
@@ -32,6 +35,7 @@ export default function AppRouter() {
                />
 
                 
+
                 <Switch>
                     <Route exact path="/" component={All_Screen}/>
                     <Route exact path="/sofas" component={Sofas_Screen}/>

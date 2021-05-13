@@ -8,7 +8,7 @@ export default function Sillas_Screen() {
             <hr></hr>
 
             <ProductoList tipo="silla"/>
-            <h5>fin</h5>
+            
         </div>
     )
 }
