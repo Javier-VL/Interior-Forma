@@ -9,6 +9,7 @@ import Sofas_Screen from '../components/content/Sofas_Screen'
 import Guardado_Screen from '../components/content/Guardado_Screen';
 import Mesas_Screen from '../components/content/Mesas_Screen';
 import Sillas_Screen from '../components/content/Sillas_Screen';
+import JumbotronBS from '../components/JumbotronBS'
 
 
 
@@ -16,6 +17,8 @@ export default function AppRouter() {
     return (
        <Router>
            <div className="container">
+               
+               <JumbotronBS/>
                <NavsBS/>
                
                 <Switch>
