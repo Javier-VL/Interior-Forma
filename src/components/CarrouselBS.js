@@ -25,7 +25,7 @@ export default function CarouselBS() {
                         
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide02}
@@ -35,7 +35,7 @@ export default function CarouselBS() {
                        
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide03}
@@ -45,7 +45,7 @@ export default function CarouselBS() {
                         
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide04}
@@ -55,7 +55,7 @@ export default function CarouselBS() {
                         
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item interval={1000}>
+                <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
                         src={slide05}
