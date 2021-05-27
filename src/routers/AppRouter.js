@@ -43,7 +43,7 @@ export default function AppRouter() {
                     <Route exact path="/guardado" component={Guardado_Screen}/>
                     <Route exact path="/mesas" component={Mesas_Screen}/>
                     <Route exact path="/sillas" component={Sillas_Screen}/>
-                    <Route exact path="/producto/:productoId" component={Producto_Screen}/>
+                    <Route exact path="/producto/:id" component={Producto_Screen}/>
                     
                 </Switch>
 
