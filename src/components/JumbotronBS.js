@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 import React from 'react'
+import { motion} from "framer-motion"
+
 
 export default function JumbotronBS({categoria}) {
 
@@ -14,8 +16,8 @@ export default function JumbotronBS({categoria}) {
             guardarDescripcion("Diseños atevidos, divertidos, originales e inspiradores. Decora, acomoda, guarda e imagina nuestra línea de muebles");
         }else if(categoria === "Mesas"){
             guardarDescripcion("Nuevos modelos de mesas con cubiertas de mármol, vidrio y madera de nogal");
-        }else if(categoria === "Todo"){
-            guardarDescripcion("Todos nuestros productos");
+        }else if(categoria === "Men"){
+            guardarDescripcion("Apartados");
         }
     },[categoria])
 
@@ -23,8 +25,9 @@ export default function JumbotronBS({categoria}) {
         <React.Fragment>
             <div className="jumbotron jumbotron-fluid ">
                 <div className="container-sm">
-                    <h1 className="categoria">{categoria}</h1>
+                    <motion.h1 animate={{fontSize: '50px',x:100}} className="categoria">{categoria}</motion.h1>
                     <p className="lead">{descripcion}</p>
+                    
                 </div>
             </div>
         </React.Fragment>

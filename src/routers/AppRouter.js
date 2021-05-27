@@ -9,6 +9,7 @@ import Sofas_Screen from '../components/content/Sofas_Screen'
 import Guardado_Screen from '../components/content/Guardado_Screen';
 import Mesas_Screen from '../components/content/Mesas_Screen';
 import Sillas_Screen from '../components/content/Sillas_Screen';
+import {Producto_Screen} from '../components/content/Producto_Screen';
 
 import JumbotronBS from '../components/JumbotronBS';
 
@@ -17,7 +18,7 @@ import JumbotronBS from '../components/JumbotronBS';
 
 
 export default function AppRouter() {
-    const [categoria, guardarCategoria] = useState('')
+    const [categoria, guardarCategoria] = useState('');
     console.log(categoria);
 
     return (
@@ -42,6 +43,7 @@ export default function AppRouter() {
                     <Route exact path="/guardado" component={Guardado_Screen}/>
                     <Route exact path="/mesas" component={Mesas_Screen}/>
                     <Route exact path="/sillas" component={Sillas_Screen}/>
+                    <Route exact path="/producto/:productoId" component={Producto_Screen}/>
                     
                 </Switch>
 
