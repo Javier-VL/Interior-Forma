@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import React from 'react'
 import { motion} from "framer-motion"
+import FadeIn from "react-fade-in"
 
 
 export default function JumbotronBS({categoria}) {
@@ -16,7 +17,7 @@ export default function JumbotronBS({categoria}) {
             guardarDescripcion("Diseños atevidos, divertidos, originales e inspiradores. Decora, acomoda, guarda e imagina nuestra línea de muebles");
         }else if(categoria === "Mesas"){
             guardarDescripcion("Nuevos modelos de mesas con cubiertas de mármol, vidrio y madera de nogal");
-        }else if(categoria === "Men"){
+        }else if(categoria === "Menu"){
             guardarDescripcion("Apartados");
         }
     },[categoria])
@@ -24,11 +25,13 @@ export default function JumbotronBS({categoria}) {
     return (
         <React.Fragment>
             <div className="jumbotron jumbotron-fluid ">
+                <FadeIn transitionDuration>
                 <div className="container-sm">
                     <motion.h1 animate={{fontSize: '50px',x:100}} className="categoria">{categoria}</motion.h1>
                     <p className="lead">{descripcion}</p>
                     
                 </div>
+                </FadeIn>
             </div>
         </React.Fragment>
     )

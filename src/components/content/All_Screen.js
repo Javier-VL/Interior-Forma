@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { ProductoList } from './Cards/ProductoList'
 import CardStyle from "../content/Cards/CardStyle.css"
 import { motion } from "framer-motion"
+import FadeIn from 'react-fade-in'
 
 
 export default function All_Screen() {
@@ -11,6 +12,7 @@ export default function All_Screen() {
     return (
         <div>
             <hr></hr>
+            <FadeIn>
 
             <div className="row row-cols-1 row-cols-md-2">
                 <div className="col mb-4">
@@ -53,6 +55,7 @@ export default function All_Screen() {
 
 
             </div>
+            </FadeIn>
 
 
 

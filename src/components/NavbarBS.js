@@ -23,7 +23,7 @@ export default function NavbarBS() {
     return (
         <React.Fragment>
             <Navbar className=" bg-light justify-content-between"   collapseOnSelect expand="lg" bg="transparent"  variant="light" >
-                <Navbar.Brand href="#home">InteriorForma</Navbar.Brand>
+                <Navbar.Brand href="#home">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggler"></Navbar.Toggle>
                 
                 <Navbar.Collapse id="responsive-navbar-nav">
