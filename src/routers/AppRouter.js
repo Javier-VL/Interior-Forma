@@ -12,7 +12,8 @@ import Sillas_Screen from '../components/content/Sillas_Screen';
 import {Producto_Screen} from '../components/content/Producto_Screen';
 
 import JumbotronBS from '../components/JumbotronBS';
-
+import NavbarBS from '../components/NavbarBS'
+import CarouselBS from '../components/CarrouselBS'
 
 
 
@@ -24,7 +25,8 @@ export default function AppRouter() {
     return (
        <Router>
            <div className="container">
-
+                <NavbarBS className ="container-sm"/>
+                <CarouselBS/>
 
                 <JumbotronBS
                     categoria = {categoria}

@@ -1,9 +1,13 @@
 import { Dropdown } from 'bootstrap';
 import React,{useState} from 'react'
 import { Navbar,Nav,NavDropdown, Form, Search, InputGroup, Button } from 'react-bootstrap'
-
+import {getProductByName} from '../selectors/getProductByName'
+import { Link } from 'react-router-dom'
 
 export default function NavbarBS() {
+
+    //Buscador
+    const [termino, guardarTermino] = useState('')
 
     //Para mostrar cuando pase el cursor
     const [show, setShow] = useState(false)
@@ -36,8 +40,15 @@ export default function NavbarBS() {
                 </Navbar.Collapse>
 
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Form.Control type="text" placeholder="Buscar" />
+                    <Form.Control 
+                    type="text" 
+                    placeholder="Buscar" 
+                    onChange = {e => guardarTermino(e.target.value)}/>
+                    <Link
+                       to={`./producto/${getProductByName(termino)}`}
+                    >
                     <Button variant="light">Buscar</Button>
+                    </Link>
                 </Navbar.Collapse>
 
                 <Navbar.Collapse className="justify-content-end">
