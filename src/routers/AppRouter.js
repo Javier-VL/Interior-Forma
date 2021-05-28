@@ -12,9 +12,10 @@ import Sillas_Screen from '../components/content/Sillas_Screen';
 import {Producto_Screen} from '../components/content/Producto_Screen';
 
 import JumbotronBS from '../components/JumbotronBS';
-import NavbarBS from '../components/NavbarBS'
-import CarouselBS from '../components/CarrouselBS'
-
+import NavbarBS from '../components/NavbarBS';
+import CarouselBS from '../components/CarrouselBS';
+import Info from '../components/Info';
+import Ubicacion from '../components/ubicacion';
 
 
 
@@ -24,9 +25,10 @@ export default function AppRouter() {
 
     return (
        <Router>
+            <NavbarBS className ="container-sm"/>
+            <CarouselBS/>
            <div className="container">
-                <NavbarBS className ="container-sm"/>
-                <CarouselBS/>
+
 
                 <JumbotronBS
                     categoria = {categoria}
@@ -46,7 +48,8 @@ export default function AppRouter() {
                     <Route exact path="/mesas" component={Mesas_Screen}/>
                     <Route exact path="/sillas" component={Sillas_Screen}/>
                     <Route exact path="/producto/:id" component={Producto_Screen}/>
-                    
+                    <Route exact path="/informacion" component={Info}/>
+                    <Route exact path="/ubicacion" component={Ubicacion}/>
                 </Switch>
 
            </div>

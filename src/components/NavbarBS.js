@@ -22,7 +22,7 @@ export default function NavbarBS() {
 
     return (
         <React.Fragment>
-            <Navbar className=" bg-light justify-content-between"   collapseOnSelect expand="lg" bg="transparent"  variant="light" >
+            <Navbar className=" bg-light justify-content-between"   collapseOnSelect expand="lg" bg="#c2c2c2"  variant="light" >
                 <Navbar.Brand href="#home">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggler"></Navbar.Toggle>
                 
@@ -53,8 +53,8 @@ export default function NavbarBS() {
 
                 <Navbar.Collapse className="justify-content-end">
                     <NavDropdown title="Contacto" id="collasible-nav-dropdown">
-                        <NavDropdown.Item>Ubicación</NavDropdown.Item>
-                        <NavDropdown.Item>Información</NavDropdown.Item>
+                        <NavDropdown.Item >Conocenos</NavDropdown.Item>
+                        <NavDropdown.Item >Ubicación</NavDropdown.Item>
                     </NavDropdown>
                 </Navbar.Collapse>
 
