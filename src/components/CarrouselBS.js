@@ -14,7 +14,7 @@ import slide05 from "../img/SALADEESPERAPORTADA.png"
 export default function CarouselBS() {
     return (
         <React.Fragment>
-            <Carousel fade>
+            <Carousel fade prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon" />}  >
                 <Carousel.Item interval={3000}>
                     <img
                         className="d-block w-100"

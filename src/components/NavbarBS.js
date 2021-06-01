@@ -40,21 +40,23 @@ export default function NavbarBS() {
 
             <Navbar className=" bg-light justify-content-between"   collapseOnSelect expand="lg" bg="#c2c2c2"  variant="light" >
 
-                <Navbar.Brand href="#home">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
+                <Navbar.Brand href="/">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggler"></Navbar.Toggle>
 
                 
 
 
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Form.Control 
+                    
+                    <Form.Control inline
                     type="text" 
-                    placeholder="Buscar" 
+                    placeholder="..." 
                     onChange = {e => guardarTermino(e.target.value)}/>
+                    
                     <Link
                        to={`./producto/${getProductByName(termino)}`}
                     >
-                    <Button variant="light">Buscar</Button>
+                    <Button  onClick={handleScroll} variant="btn btn-secondary">Buscar</Button>
                     </Link>
                 </Navbar.Collapse>
 
