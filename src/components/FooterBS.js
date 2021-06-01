@@ -4,7 +4,7 @@ import "./../index.css";
 export default function FooterBS() {
   return (
     <React.Fragment>
-      <footer className="bg-dark text-center text-white">
+      <footer className="bg-dark text-center text-white ">
         {/* Grid container */}
         <div className="container p-4 pb-0">
           {/* Section: Form */}

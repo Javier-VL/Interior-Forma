@@ -1,8 +1,10 @@
 import { Dropdown } from 'bootstrap';
-import React,{useState, useEffect} from 'react'
+
+import React,{useState} from 'react'
 import { Navbar,Nav,NavDropdown, Form, Search, InputGroup, Button } from 'react-bootstrap'
 import {getProductByName} from '../selectors/getProductByName'
 import { Link, useLocation } from 'react-router-dom'
+
 
 export default function NavbarBS() {
 
@@ -15,43 +17,50 @@ export default function NavbarBS() {
 
     const showDropdown = (e) => {
         setShow(!show);
+        window.scroll({
+            top: document.body.offsetHeight,
+            left: 0, 
+            behavior: 'smooth',
+          });
     }
 
     const hideDropdown = (e) => {
         setShow(false);
     }
 
+    const handleScroll = ()=> {
+        window.scroll({
+            top: document.body.offsetHeight,
+            left: 0, 
+            behavior: 'smooth',
+          });
+    }
 
     return (
         <React.Fragment>
+
             <Navbar className=" bg-light justify-content-between"   collapseOnSelect expand="lg" bg="#c2c2c2"  variant="light" >
-                <Navbar.Brand href="#home">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
+
+                <Navbar.Brand href="/">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggler"></Navbar.Toggle>
+
                 
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                        <NavDropdown title="Productos" id="collasible-nav-dropdown" show={show} onMouseEnter={showDropdown} onMouseLeave={hideDropdown}>
-                            <NavDropdown  title="Profile" id="collasible-nav-dropdown-right" />
-                            <NavDropdown.Item href="#action/3.2">Sillas</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">Guardado</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Mesas</NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav>
-                </Navbar.Collapse>
+
 
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Form.Control 
+                    
+                    <Form.Control inline
                     type="text" 
-                    placeholder="Buscar" 
+                    placeholder="..." 
                     onChange = {e => guardarTermino(e.target.value)}/>
+                    
                     <Link
                        to={`/producto/${getProductByName(termino)}`}
                     >
-                    <Button variant="light">Buscar</Button>
+                    <Button  onClick={handleScroll} variant="btn btn-secondary">Buscar</Button>
                     </Link>
                 </Navbar.Collapse>
+
 
                 <Navbar.Collapse className="justify-content-end">
                     <NavDropdown title="Contacto" id="collasible-nav-dropdown">

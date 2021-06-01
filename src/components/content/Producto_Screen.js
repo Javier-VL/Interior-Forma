@@ -5,10 +5,10 @@ import {productos} from '../../data/productos'
 import FadeIn from 'react-fade-in';
 
 
+import CardStyle from "../content/Cards/CardStyle.css"
 
 
-
-export const Producto_Screen = () => {
+export const Producto_Screen = ({history}) => {
 
     const {id} = useParams();//hook extrae los parametros que llegan por elurl
 
@@ -24,29 +24,40 @@ export const Producto_Screen = () => {
         tipo,
         nombre,
         descripcion,
-        material,
-        acabado,
+        medidas,
+        cod_inlab,
     } = producto;
+
+    const handleReturn = () =>{
+        history.goBack();
+    }
 
     return (
         <React.Fragment>
         <FadeIn>
-        <div className="row mt-5">
-            <div className="col-4">
-                <img src={`../assets/productos/${producto.id}.jpg`} className="img-fluid" ></img>               
+        <div className="row gx-4 gx-lg-5 align-items-center">
+            <div className=""></div>
+                <img src={`../assets/productos/${producto.id}.jpg`} className="my-card" ></img>               
+            <div className="col-md-6">
+            
+                        <h1 className="display-5 fw-bolder">{producto.nombre}</h1>
+                        <div className="fs-5 mb-1">
+                            <span>{producto.descripcion}</span>
+                        </div>
+                        <p className="fw-bold">Medidas: <p className="fw-normal">{producto.medidas}</p> </p>
+                        <div className="d-flex">
+                            
+                            <button className="btn btn-outline-dark flex-shrink-0" type="button" onClick={handleReturn}>
+                                <i className="bi-cart-fill me-1"></i>
+                                Volver
+                            </button>
+                        </div>
+                        <div class="mt-4 col-md-12"></div>
 
             </div>
-            <div className="col-8">
-                <h3></h3>
-                <ul className="list-group list-group-flush">
-                    <li className="list-group-tiem"><b>{nombre}</b></li>
-                    <li className="list-group-tiem"><b>{descripcion}</b></li>
-                    <li className="list-group-tiem"><b>{material}</b></li>
-                    <li className="list-group-tiem"><b>{acabado}</b></li>
+            
+        
 
-                </ul>
-
-            </div>
 
         </div>
         </FadeIn>

@@ -1,3 +1,4 @@
+import { Producto_Screen } from "../components/content/Producto_Screen";
 import {productos} from "../data/productos";
 
 export const getProductByName = (nombre) =>{
@@ -7,6 +8,7 @@ export const getProductByName = (nombre) =>{
     if (producto == null){
         return
     }
+    console.log(producto.nombre)
 
     return producto.id
 

@@ -3,7 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  overflow-x: hidden;
+
 
 
 }
@@ -20,8 +21,9 @@ code {
 }
 
 
-.style-footer{
+.style-footer,.push{
   background-color: rgba(0, 0, 0, 0.2);
+  height: 90px;
 
 }
 
