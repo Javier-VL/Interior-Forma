@@ -24,8 +24,8 @@ export const Producto_Screen = () => {
         tipo,
         nombre,
         descripcion,
-        material,
-        acabado,
+        medidas,
+        cod_inlab,
     } = producto;
 
     return (
@@ -41,8 +41,8 @@ export const Producto_Screen = () => {
                 <ul className="list-group list-group-flush">
                     <li className="list-group-tiem"><b>{nombre}</b></li>
                     <li className="list-group-tiem"><b>{descripcion}</b></li>
-                    <li className="list-group-tiem"><b>{material}</b></li>
-                    <li className="list-group-tiem"><b>{acabado}</b></li>
+                    <li className="list-group-tiem"><b>{medidas}</b></li>
+                    <li className="list-group-tiem"><b>{cod_inlab}</b></li>
 
                 </ul>
 
