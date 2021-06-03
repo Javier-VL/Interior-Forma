@@ -26,11 +26,19 @@ export const Producto_Screen = ({history}) => {
         descripcion,
         medidas,
         cod_inlab,
+        material,
+        acabado,
+        sistema,
     } = producto;
 
     const handleReturn = () =>{
         history.goBack();
     }
+
+    function productoSistema(producto){
+        return <p className="fw-bold">sistema: <p className="fw-normal">{producto.sistema}</p> </p>
+    }
+
 
     return (
         <React.Fragment>
@@ -44,7 +52,10 @@ export const Producto_Screen = ({history}) => {
                         <div className="fs-5 mb-1">
                             <span>{producto.descripcion}</span>
                         </div>
-                        <p className="fw-bold">Medidas: <p className="fw-normal">{producto.medidas}</p> </p>
+                        <p className="fw-bold">{producto.medidas}</p>
+                        <p className="fw-bold">{producto.material}</p>
+                        <p className="fw-bold">{producto.acabado}</p>
+                        <p className="fw-normal">{producto.sistema}</p>
                         <div className="d-flex">
                             
                             <button className="btn btn-outline-dark flex-shrink-0" type="button" onClick={handleReturn}>

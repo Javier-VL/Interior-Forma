@@ -25,6 +25,10 @@ export default function NavsBS({ guardarCategoria }) {
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 1}} className="nav-item" role="presentation">
+                    <Link onClick={handleAdd("Mesas")} className="nav-link" id="mesas-tab" data-toggle="tab" to="/mesas" role="tab" aria-controls="contact" aria-selected="false">Mesas</Link>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 1}} className="nav-item" role="presentation">
                     <Link onClick={handleAdd("Sofas")} className="nav-link " id="all-tab" data-toggle="tab" to="/sofas" role="tab" aria-controls="profile" aria-selected="false">Sofas</Link>
 
                 </motion.li>
@@ -36,10 +40,7 @@ export default function NavsBS({ guardarCategoria }) {
                     whileTap={{ scale: 1}} className="nav-item" role="presentation">
                     <Link onClick={handleAdd("Guardado")} className="nav-link" id="guardado-tab" data-toggle="tab" to="/guardado" role="tab" aria-controls="contact" aria-selected="false">Guardado</Link>
                 </motion.li>
-                <motion.li whileHover={{ scale: 1.5 }}
-                    whileTap={{ scale: 1}} className="nav-item" role="presentation">
-                    <Link onClick={handleAdd("Mesas")} className="nav-link" id="mesas-tab" data-toggle="tab" to="/mesas" role="tab" aria-controls="contact" aria-selected="false">Mesas</Link>
-                </motion.li>
+
             </ul>
             {/*
             <div className="tab-content" id="myTabContent">
