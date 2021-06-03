@@ -3,13 +3,14 @@ import { Dropdown } from 'bootstrap';
 import React,{useState} from 'react'
 import { Navbar,Nav,NavDropdown, Form, Search, InputGroup, Button } from 'react-bootstrap'
 import {getProductByName} from '../selectors/getProductByName'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 
 export default function NavbarBS() {
 
     //Buscador
     const [termino, guardarTermino] = useState('')
+    const [url, guardarUrl] = useState('')
 
     //Para mostrar cuando pase el cursor
     const [show, setShow] = useState(false)
@@ -54,7 +55,7 @@ export default function NavbarBS() {
                     onChange = {e => guardarTermino(e.target.value)}/>
                     
                     <Link
-                       to={`./producto/${getProductByName(termino)}`}
+                       to={`/producto/${getProductByName(termino)}`}
                     >
                     <Button  onClick={handleScroll} variant="btn btn-secondary">Buscar</Button>
                     </Link>
