@@ -43,10 +43,7 @@ export default function NavsBS({ guardarCategoria }) {
 
             </ul>
             {/*
-            <div className="tab-content" id="myTabContent">
-                <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            backup
             </div> */}
 
         </>
