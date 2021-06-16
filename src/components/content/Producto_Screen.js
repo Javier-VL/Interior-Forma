@@ -1,29 +1,31 @@
-import React from 'react'
+import React,  { useState } from 'react'
 import { Redirect, useParams } from 'react-router'
 import { getProductoById } from '../../selectors/getProductoById';
-import {productos} from '../../data/productos'
+import { productos } from '../../data/productos'
 import FadeIn from 'react-fade-in';
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
 
 
 
 
 
-export const Producto_Screen = ({history}) => {
+
+export const Producto_Screen = ({ history }) => {
 
     let imageSwap = false;
 
-    const {id} = useParams();//hook extrae los parametros que llegan por elurl
+    const { id } = useParams();//hook extrae los parametros que llegan por elurl
 
     console.log(id);
     const producto = getProductoById(id)
     console.log(producto)
-   
-    if(!producto){
-        return <Redirect to="/"/>
+
+    if (!producto) {
+        return <Redirect to="/" />
     }
 
-    const{
+    const {
         tipo,
         nombre,
         descripcion,
@@ -34,35 +36,52 @@ export const Producto_Screen = ({history}) => {
         sistema,
     } = producto;
 
-    const handleReturn = () =>{
+    const handleReturn = () => {
         history.goBack();
     }
 
-    function productoSistema(producto){
+    function productoSistema(producto) {
         return <p className="fw-bold">sistema: <p className="fw-normal">{producto.sistema}</p> </p>
     }
 
 
-    function changeImage(e) {
-        imageSwap = !imageSwap;
-        if(producto.tipo==="interiorForma"&&imageSwap==true){
 
-            e.target.setAttribute( 'src', `../assets/productos/${producto.id}2.jpg`);
-        }else if (producto.tipo==="interiorForma"&&imageSwap==false){
-            e.target.setAttribute( 'src', `../assets/productos/${producto.id}.jpg`);
-        }
-        
+
+    let imagesPath = {
+        minus: `../assets/productos/${producto.id}.jpg`,
+        plus: `../assets/productos/${producto.id}2.jpg`
     }
     
 
+    const Shirts = () =>{
+        const [selected, setSelected] = useState(imagesPath.minus)};
+
+    function changeImage(e) {
+        imageSwap = !imageSwap;
+        if (producto.tipo === "interiorForma" && imageSwap == true) {
+
+            e.target.setAttribute('src', `../assets/productos/${producto.id}2.jpg`);
+        } else if (producto.tipo === "interiorForma" && imageSwap == false) {
+            e.target.setAttribute('src', `../assets/productos/${producto.id}.jpg`);
+        }
+
+    }
+
+
+
     return (
         <React.Fragment>
-        <FadeIn>
-        <div className="row gx-4 gx-lg-5 align-items-center">
-            <div className=""></div>
-                <img className="my-card-2" onClick={changeImage} src={ `../assets/productos/${producto.id}.jpg`}  ></img>               
-            <div className="col-md-6">
+            <FadeIn>
             
+                <div className="row gx-4 gx-lg-5 align-items-center ">
+
+                    <img  id="mueble" className="my-card-2" onClick={changeImage} src={`../assets/productos/${producto.id}.jpg`}  ></img>
+                    
+                    
+                    <div className="col-md-6">
+
+                        {/*<BootstrapSwitchButton   checked={true}  onstyle="dark" offstyle="secondary" onlabel=">" offlabel="<" />*/}
+
                         <h1 className="display-5 fw-bolder">{producto.nombre}</h1>
                         <div className="fs-5 mb-1">
                             <span>{producto.descripcion}</span>
@@ -72,21 +91,21 @@ export const Producto_Screen = ({history}) => {
                         <p className="fw-bold">{producto.acabado}</p>
                         <p className="fw-normal">{producto.sistema}</p>
                         <div className="d-flex">
-                            
+
                             <button className="btn btn-outline-dark flex-shrink-0" type="button" onClick={handleReturn}>
                                 <i className="bi-cart-fill me-1"></i>
                                 Volver
                             </button>
                         </div>
-                        <div class="mt-4 col-md-12"></div>
+                        <div className="mt-4 col-md-12"></div>
 
-            </div>
-            
-        
+                    </div>
 
 
-        </div>
-        </FadeIn>
+
+
+                </div>
+            </FadeIn>
         </React.Fragment>
     )
 }

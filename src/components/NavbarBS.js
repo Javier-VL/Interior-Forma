@@ -1,8 +1,8 @@
 import { Dropdown } from 'bootstrap';
 
-import React,{useState} from 'react'
-import { Navbar,Nav,NavDropdown, Form, Search, InputGroup, Button } from 'react-bootstrap'
-import {getProductByName} from '../selectors/getProductByName'
+import React, { useState } from 'react'
+import { Navbar, Nav, NavDropdown, Form, Search, InputGroup, Button } from 'react-bootstrap'
+import { getProductByName } from '../selectors/getProductByName'
 import { Link, useLocation } from 'react-router-dom'
 
 
@@ -19,45 +19,51 @@ export default function NavbarBS() {
         setShow(!show);
         window.scroll({
             top: document.body.offsetHeight,
-            left: 0, 
+            left: 0,
             behavior: 'smooth',
-          });
+        });
     }
 
     const hideDropdown = (e) => {
         setShow(false);
     }
 
-    const handleScroll = ()=> {
+    const handleScroll = () => {
         window.scroll({
             top: document.body.offsetHeight,
-            left: 0, 
+            left: 0,
             behavior: 'smooth',
-          });
+        });
     }
 
     return (
         <React.Fragment>
 
-            <Navbar className=" bg-light justify-content-between"   collapseOnSelect expand="lg" bg="#c2c2c2"  variant="light" >
+            <Navbar className=" bg-light justify-content-between" collapseOnSelect expand="lg" bg="#c2c2c2" variant="light" >
 
-                <Navbar.Brand href="/">‎‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎InteriorForma</Navbar.Brand>
+                <Navbar.Brand href="/">‎‎‎‏‏‎ ‎‏‏‎ <img
+                    src="../assets/logo/lOGOTEST.png"
+                    width="124"
+                    height="68"
+                    className="d-inline-block align-top"
+                    alt=""
+                />‎‏‏‎ </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-toggler"></Navbar.Toggle>
 
-                
+
 
 
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    
+
                     <Form.Control inline
-                    type="text" 
-                    placeholder="..." 
-                    onChange = {e => guardarTermino(e.target.value)}/>
-                    
+                        type="text"
+                        placeholder="..."
+                        onChange={e => guardarTermino(e.target.value)} />
+
                     <Link
-                       to={`/producto/${getProductByName(termino)}`}
+                        to={`/producto/${getProductByName(termino)}`}
                     >
-                    <Button  onClick={handleScroll} variant="btn btn-secondary">Buscar</Button>
+                        <Button onClick={handleScroll} variant="btn btn-secondary">Buscar</Button>
                     </Link>
                 </Navbar.Collapse>
 

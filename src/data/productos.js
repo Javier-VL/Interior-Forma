@@ -695,6 +695,14 @@ export const productos = [
         'acabado':'Acabado: Pintura epoxica |Negro |Blanco |Oxford',
         'sistema':'Sistema de armado: Desarmable ( para optimizar espacio y costo de transporte).*Las medidas varían dependiendo el tamaño elegido*'
     },
+    {
+        'id': 'mesa-junior',
+        'nombre': 'Junior',
+        'tipo': 'interiorForma',
+        'descripcion': '',
+        'medidas': '0.60  -- 0.75',
+        'cod_inlab':''
+    },
         //
         {
             'id': 'mesa-alemania',
