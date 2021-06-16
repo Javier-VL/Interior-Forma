@@ -19,7 +19,12 @@ export default function JumbotronBS({categoria}) {
             guardarDescripcion("Nuevos modelos de mesas con cubiertas de mármol, vidrio y madera de nogal");
         }else if(categoria === "Menu"){
             guardarDescripcion("Apartados");
+        }else if(categoria === "Interior Forma"){
+            guardarDescripcion("Muebles de nuestro catalogo");
+        }else{
+            guardarDescripcion("Muebles de nuestro catalogo");
         }
+
     },[categoria])
 
     return (
@@ -28,7 +33,7 @@ export default function JumbotronBS({categoria}) {
                 <FadeIn transitionDuration>
                 <div className="container-sm">
                     <motion.h1 animate={{fontSize: '50px',x:100}} className="categoria">{categoria}</motion.h1>
-                    <p className="lead">{descripcion}</p>
+                    <h4 className="lead">{descripcion}</h4>
                     
                 </div>
                 </FadeIn>

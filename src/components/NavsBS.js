@@ -21,12 +21,15 @@ export default function NavsBS({ guardarCategoria }) {
                 <motion.li whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 1}} className="nav-item" role="presentation">
 
-                    <Link onClick={handleAdd("Menu")} className="nav-link " id="home-tab" data-toggle="tab" to="/" role="tab" aria-controls="home" aria-selected="true">Menu</Link>
+                    <Link onClick={handleAdd("Interior Forma")} className="nav-link " id="home-tab" data-toggle="tab" to="/" role="tab" aria-controls="home" aria-selected="true">Interior Forma</Link>
                 </motion.li>
+                
                 <motion.li whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 1}} className="nav-item" role="presentation">
-                    <Link onClick={handleAdd("Mesas")} className="nav-link" id="mesas-tab" data-toggle="tab" to="/mesas" role="tab" aria-controls="contact" aria-selected="false">Mesas</Link>
+
+                    <Link onClick={handleAdd("Menu")} className="nav-link " id="home-tab" data-toggle="tab" to="/interior-forma" role="tab" aria-controls="home" aria-selected="true">Menu</Link>
                 </motion.li>
+
                 <motion.li whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 1}} className="nav-item" role="presentation">
                     <Link onClick={handleAdd("Sofas")} className="nav-link " id="all-tab" data-toggle="tab" to="/sofas" role="tab" aria-controls="profile" aria-selected="false">Sofas</Link>
@@ -35,6 +38,10 @@ export default function NavsBS({ guardarCategoria }) {
                 <motion.li whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 1}}className="nav-item" role="presentation">
                     <Link onClick={handleAdd("Sillas")} className="nav-link" id="sillas-tab" data-toggle="tab" to="/sillas" role="tab" aria-controls="contact" aria-selected="false">Sillas</Link>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 1}}className="nav-item" role="presentation">
+                    <Link onClick={handleAdd("Mesas")} className="nav-link" id="sillas-tab" data-toggle="tab" to="/mesas" role="tab" aria-controls="contact" aria-selected="false">Mesas</Link>
                 </motion.li>
                 <motion.li whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 1}} className="nav-item" role="presentation">

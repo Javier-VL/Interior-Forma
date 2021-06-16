@@ -422,7 +422,7 @@ export const productos = [
     {
         'id': 'mesa-harley',
         'nombre': 'Harley',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 1’’ (Cal.18).  ',
 
         'medidas':'',
@@ -434,7 +434,7 @@ export const productos = [
     {
         'id': 'mesa-harris-sinfaldon',
         'nombre': 'Harris| Escritorio',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 1’’ (Cal.18). Incluye faldón  ',
 
         'medidas':'',
@@ -446,7 +446,7 @@ export const productos = [
     {
         'id': 'mesa-harris-lateral',
         'nombre': 'Harris| p/Lateral',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -458,7 +458,7 @@ export const productos = [
     {
         'id': 'mesa-diamond',
         'nombre': 'Diamond',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos en forma triangular fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -470,7 +470,7 @@ export const productos = [
     {
         'id': 'mesa-diamond-lateral',
         'nombre': 'Diamond| p/Lateral',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos en forma triangular fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -482,7 +482,7 @@ export const productos = [
     {
         'id': 'mesa-diamond-puente',
         'nombre': 'Diamond| c/Puente',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos en forma triangular fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -494,7 +494,7 @@ export const productos = [
     {
         'id': 'mesa-cuadrato',
         'nombre': 'Cuadrato',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 2’’ (Cal.18).',
 
         'medidas':'',
@@ -506,7 +506,7 @@ export const productos = [
     {
         'id': 'mesa-cuadrato-lateral',
         'nombre': 'Cuadrato| p/Lateral',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 2’’ (Cal.18).',
 
         'medidas':'',
@@ -518,7 +518,7 @@ export const productos = [
     {
         'id': 'mesa-cuadrato-puente',
         'nombre': 'Cuadrato| c/Puente',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 2’’ (Cal.18).',
 
         'medidas':'',
@@ -530,7 +530,7 @@ export const productos = [
     {
         'id': 'mesa-piramide',
         'nombre': 'Piramide',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -542,7 +542,7 @@ export const productos = [
     {
         'id': 'mesa-piramide-lateral',
         'nombre': 'Piramide| p/Lateral',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -554,7 +554,7 @@ export const productos = [
     {
         'id': 'mesa-piramide-puente',
         'nombre': 'Piramide| c/Puente',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 10 x 10 cm en diagonal con terminación en 4 cm (Cal. 12), se conecta por medio de largueros de 2’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -566,7 +566,7 @@ export const productos = [
     {
         'id': 'mesa-delta',
         'nombre': 'Delta',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 1’’ x 3’’ (Cal.18).',
 
         'medidas':'',
@@ -578,7 +578,7 @@ export const productos = [
     {
         'id': 'mesa-delta-lateral',
         'nombre': 'Delta| p/Lateral',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 1’’ x 3’’ (Cal.18).',
 
         'medidas':'',
@@ -590,7 +590,7 @@ export const productos = [
     {
         'id': 'mesa-delta-puente',
         'nombre': 'Delta| c/Puente',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 1’’ x 3’’ (Cal.18).',
 
         'medidas':'',
@@ -602,7 +602,7 @@ export const productos = [
     {
         'id': 'mesa-delta-estacion',
         'nombre': 'Delta | Estación ',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 1’’ x 3’’ (Cal.18).',
 
         'medidas':'',
@@ -614,7 +614,7 @@ export const productos = [
     {
         'id': 'mesa-alfa',
         'nombre': 'Alfa ',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos  fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 3’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -626,7 +626,7 @@ export const productos = [
     {
         'id': 'mesa-alfa-puente',
         'nombre': 'Alfa| c/Puente ',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos  fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 3’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -638,7 +638,7 @@ export const productos = [
     {
         'id': 'mesa-alfa-lateral',
         'nombre': 'Alfa| p/Lateral ',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos  fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 3’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -650,7 +650,7 @@ export const productos = [
     {
         'id': 'mesa-alfa-estacion',
         'nombre': 'Alfa| Estacion ',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'Marcos  fabricados con lamina de acero (Cal.18). Los marcos se unen por medio de largueros de 3’’ x 1’’ (Cal.18).',
 
         'medidas':'',
@@ -662,7 +662,7 @@ export const productos = [
     {
         'id': 'mesa-momma',
         'nombre': 'Momma',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 8 x 8 cm en diagonal con terminación en 3.5 cm (Cal. 12), se conecta por medio de un marco de 2’’ (Cal.18). ',
 
         'medidas':'',
@@ -674,7 +674,7 @@ export const productos = [
     {
         'id': 'mesa-olan',
         'nombre': 'Olan',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 8 x 8 cm en diagonal con terminación en 3.5 cm (Cal. 12), se conecta por medio de un marco de 2’’ (Cal.18). ',
 
         'medidas':'',
@@ -686,7 +686,7 @@ export const productos = [
     {
         'id': 'mesa-hudson',
         'nombre': 'Hudson',
-        'tipo': 'mesa',
+        'tipo': 'interiorForma',
         'descripcion': 'El tipo de pata es en ángulo de 8 x 8 cm en diagonal con terminación en 3.5 cm (Cal. 12), se conecta por medio de un marco de 2’’ (Cal.18). ',
 
         'medidas':'',
@@ -695,6 +695,167 @@ export const productos = [
         'acabado':'Acabado: Pintura epoxica |Negro |Blanco |Oxford',
         'sistema':'Sistema de armado: Desarmable ( para optimizar espacio y costo de transporte).*Las medidas varían dependiendo el tamaño elegido*'
     },
+        //
+        {
+            'id': 'mesa-alemania',
+            'nombre': 'Alemania',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 100 x 100 x 35 ',
+            'cod_inlab':'CENTRAL CARDY',
+        },
+        {
+            'id': 'mesa-atrixco',
+            'nombre': 'Atrixco',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 120 x 70 x 40',
+            'cod_inlab':'CENTRAL MANU 120'        
+        },
+        {
+            'id': 'mesa-cardon',
+            'nombre': 'Cardon',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 100 x 100 x 35',
+            'cod_inlab':'CENTRAL ACANTHA'
+        },
+        {
+            'id': 'mesa-leon',
+            'nombre': 'Leon',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 100 x 60 x 30',
+            'cod_inlab':'CENTRAL DIONNE'
+        },
+        {
+            'id': 'mesa-sendero',
+            'nombre': 'Sendero',
+            'tipo': 'mesa',
+            'descripcion': 'Descripcion',
+            'medidas': 'Medidas: Material ',
+            'cod_inlab':'Acabado '
+        },
+        {
+            'id': 'mesa-wengue',
+            'nombre': 'Wengue',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 100 x 100 x 40',
+            'cod_inlab':'CENTRAL ABASI'
+        },
+        {
+            'id': 'mesa-breton',
+            'nombre': 'Breton',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 160 x 100 x 76',
+            'cod_inlab':'ABASI PEDESTAL'
+        },
+        {
+            'id': 'mesa-coelle',
+            'nombre': 'Coelle',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 50 x 55',
+            'cod_inlab':'LATERAL RAYOU UV'
+        },
+        {
+            'id': 'mesa-encino',
+            'nombre': 'Encino',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 210 x 95 x 78',
+            'cod_inlab':'LUKMAN'
+        },
+        {
+            'id': 'mesa-granito',
+            'nombre': 'Granito',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 50 x 50 x 55',
+            'cod_inlab':'CENTRAL MANU 50'
+        },
+        {
+            'id': 'mesa-horacio',
+            'nombre': 'Horacio',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 160 x 100 x 78',
+            'cod_inlab':'EVANTHE'
+        },
+        {
+            'id': 'mesa-marmol',
+            'nombre': 'Marmol',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: D: 120 x H: 78',
+            'cod_inlab':'MOSART'
+        },
+        {
+            'id': 'mesa-mazunte',
+            'nombre': 'Mazunte',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: -',
+            'cod_inlab':'-'
+        },
+        {
+            'id': 'mesa-onix',
+            'nombre': 'Onix',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 50 x 44',
+            'cod_inlab':'LATERAL VALAM'
+        },
+        {
+            'id': 'mesa-peñon',
+            'nombre': 'Peñon',
+            'tipo': 'mesa',
+            'descripcion': 'Descripcion',
+            'medidas': 'Medidas: Material ',
+            'cod_inlab':'Acabado '
+        },
+        {
+            'id': 'mesa-rolet',
+            'nombre': 'Rolet',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 100 x 65 x 40',
+            'cod_inlab':'CENTRAL RAYO UV'
+        },
+        {
+            'id': 'mesa-salvador',
+            'nombre': 'Salvador',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 50 x 50 x 55',
+            'cod_inlab':'CENTRAL MANU 50 NOGAL'
+        },
+        {
+            'id': 'mesa-sendero',
+            'nombre': 'Sendero',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 100 x 100 x 35',
+            'cod_inlab':'CENTRAL DASHA'
+        },
+        {
+            'id': 'mesa-tabachin',
+            'nombre': 'Tabachin',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: D: 120 x H: 78',
+            'cod_inlab':'NURIA UV'
+        },
+        {
+            'id': 'mesa-talita',
+            'nombre': 'Talita',
+            'tipo': 'mesa',
+            'descripcion': '',
+            'medidas': 'Medidas: 220 x 110 x 78',
+            'cod_inlab':'IKAL STO. TOMAS'
+        },
 
     
     
@@ -702,166 +863,6 @@ export const productos = [
     
     
 
-    //
-    {
-        'id': 'mesa-alemania',
-        'nombre': 'Alemania',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 100 x 100 x 35 ',
-        'cod_inlab':'CENTRAL CARDY',
-    },
-    {
-        'id': 'mesa-atrixco',
-        'nombre': 'Atrixco',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 120 x 70 x 40',
-        'cod_inlab':'CENTRAL MANU 120'        
-    },
-    {
-        'id': 'mesa-cardon',
-        'nombre': 'Cardon',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 100 x 100 x 35',
-        'cod_inlab':'CENTRAL ACANTHA'
-    },
-    {
-        'id': 'mesa-leon',
-        'nombre': 'Leon',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 100 x 60 x 30',
-        'cod_inlab':'CENTRAL DIONNE'
-    },
-    {
-        'id': 'mesa-sendero',
-        'nombre': 'Sendero',
-        'tipo': 'mesa',
-        'descripcion': 'Descripcion',
-        'medidas': 'Medidas: Material ',
-        'cod_inlab':'Acabado '
-    },
-    {
-        'id': 'mesa-wengue',
-        'nombre': 'Wengue',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 100 x 100 x 40',
-        'cod_inlab':'CENTRAL ABASI'
-    },
-    {
-        'id': 'mesa-breton',
-        'nombre': 'Breton',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 160 x 100 x 76',
-        'cod_inlab':'ABASI PEDESTAL'
-    },
-    {
-        'id': 'mesa-coelle',
-        'nombre': 'Coelle',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 50 x 55',
-        'cod_inlab':'LATERAL RAYOU UV'
-    },
-    {
-        'id': 'mesa-encino',
-        'nombre': 'Encino',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 210 x 95 x 78',
-        'cod_inlab':'LUKMAN'
-    },
-    {
-        'id': 'mesa-granito',
-        'nombre': 'Granito',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 50 x 50 x 55',
-        'cod_inlab':'CENTRAL MANU 50'
-    },
-    {
-        'id': 'mesa-horacio',
-        'nombre': 'Horacio',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 160 x 100 x 78',
-        'cod_inlab':'EVANTHE'
-    },
-    {
-        'id': 'mesa-marmol',
-        'nombre': 'Marmol',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: D: 120 x H: 78',
-        'cod_inlab':'MOSART'
-    },
-    {
-        'id': 'mesa-mazunte',
-        'nombre': 'Mazunte',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: -',
-        'cod_inlab':'-'
-    },
-    {
-        'id': 'mesa-onix',
-        'nombre': 'Onix',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 50 x 44',
-        'cod_inlab':'LATERAL VALAM'
-    },
-    {
-        'id': 'mesa-peñon',
-        'nombre': 'Peñon',
-        'tipo': 'mesa',
-        'descripcion': 'Descripcion',
-        'medidas': 'Medidas: Material ',
-        'cod_inlab':'Acabado '
-    },
-    {
-        'id': 'mesa-rolet',
-        'nombre': 'Rolet',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 100 x 65 x 40',
-        'cod_inlab':'CENTRAL RAYO UV'
-    },
-    {
-        'id': 'mesa-salvador',
-        'nombre': 'Salvador',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 50 x 50 x 55',
-        'cod_inlab':'CENTRAL MANU 50 NOGAL'
-    },
-    {
-        'id': 'mesa-sendero',
-        'nombre': 'Sendero',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 100 x 100 x 35',
-        'cod_inlab':'CENTRAL DASHA'
-    },
-    {
-        'id': 'mesa-tabachin',
-        'nombre': 'Tabachin',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: D: 120 x H: 78',
-        'cod_inlab':'NURIA UV'
-    },
-    {
-        'id': 'mesa-talita',
-        'nombre': 'Talita',
-        'tipo': 'mesa',
-        'descripcion': '',
-        'medidas': 'Medidas: 220 x 110 x 78',
-        'cod_inlab':'IKAL STO. TOMAS'
-    },
+
 
 ]

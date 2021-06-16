@@ -5,10 +5,13 @@ import {productos} from '../../data/productos'
 import FadeIn from 'react-fade-in';
 
 
-import CardStyle from "../content/Cards/CardStyle.css"
+
+
 
 
 export const Producto_Screen = ({history}) => {
+
+    let imageSwap = false;
 
     const {id} = useParams();//hook extrae los parametros que llegan por elurl
 
@@ -40,12 +43,24 @@ export const Producto_Screen = ({history}) => {
     }
 
 
+    function changeImage(e) {
+        imageSwap = !imageSwap;
+        if(producto.tipo==="interiorForma"&&imageSwap==true){
+
+            e.target.setAttribute( 'src', `../assets/productos/${producto.id}2.jpg`);
+        }else if (producto.tipo==="interiorForma"&&imageSwap==false){
+            e.target.setAttribute( 'src', `../assets/productos/${producto.id}.jpg`);
+        }
+        
+    }
+    
+
     return (
         <React.Fragment>
         <FadeIn>
         <div className="row gx-4 gx-lg-5 align-items-center">
             <div className=""></div>
-                <img src={`../assets/productos/${producto.id}.jpg`} className="my-card" ></img>               
+                <img className="my-card-2" onClick={changeImage} src={ `../assets/productos/${producto.id}.jpg`}  ></img>               
             <div className="col-md-6">
             
                         <h1 className="display-5 fw-bolder">{producto.nombre}</h1>
