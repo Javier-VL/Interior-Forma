@@ -21,6 +21,8 @@ export const Producto_Screen = ({ history }) => {
     const producto = getProductoById(id)
     console.log(producto)
 
+    const [Cambio,GuardarCambio] = useState("")
+
     if (!producto) {
         return <Redirect to="/" />
     }
@@ -45,7 +47,15 @@ export const Producto_Screen = ({ history }) => {
     }
 
 
-
+    function switchCambio(){
+        if (Cambio == ""){
+            GuardarCambio("2")
+            return
+        }else{
+            GuardarCambio("")
+            return
+        }
+    }
 
     let imagesPath = {
         minus: `../assets/productos/${producto.id}.jpg`,
@@ -75,12 +85,19 @@ export const Producto_Screen = ({ history }) => {
             
                 <div className="row gx-4 gx-lg-5 align-items-center ">
 
-                    <img  id="mueble" className="my-card-2" onClick={changeImage} src={`../assets/productos/${producto.id}.jpg`}  ></img>
-                    
-                    
+                    <img  id="mueble" className="my-card-2" onClick={changeImage} src={`../assets/productos/${producto.id}${Cambio}.jpg`}  ></img>
+                                        
                     <div className="col-md-6">
 
-                        {/*<BootstrapSwitchButton   checked={true}  onstyle="dark" offstyle="secondary" onlabel=">" offlabel="<" />*/}
+                        <BootstrapSwitchButton   
+                            
+                            checked={true}  
+                            onstyle="dark" 
+                            offstyle="secondary" 
+                            onlabel=">" 
+                            offlabel="<" 
+                            onChange = {() => switchCambio()}
+                        />
 
                         <h1 className="display-5 fw-bolder">{producto.nombre}</h1>
                         <div className="fs-5 mb-1">
